@@ -10,7 +10,7 @@ repos:
 
   poky:
     url: git://git.yoctoproject.org/poky
-    refspec: gatesgarth
+    refspec: dunfell
     layers:
       meta:
       meta-poky:

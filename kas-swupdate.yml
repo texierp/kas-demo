@@ -1,0 +1,26 @@
+header:
+  version: 8
+
+repos:
+
+  meta-swupdate:
+    url: https://github.com/sbabic/meta-swupdate
+    refspec: dunfell
+
+  meta-swupdate-boards:
+    url: https://github.com/sbabic/meta-swupdate-boards
+    refspec: master
+
+local_conf_header:
+  swu-specific: |
+    PREFERRED_VERSION_swupdate = "2021.04+git%"
+    IMAGE_FSTYPES_append = " ext4.gz"
+    IMAGE_INSTALL_append = " \
+        libubootenv-bin \
+        swupdate \
+        swupdate-progress \
+        swupdate-tools-hawkbit \
+        swupdate-www \
+        kernel-image \
+        kernel-modules \
+    "

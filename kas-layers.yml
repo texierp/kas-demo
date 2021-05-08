@@ -7,6 +7,10 @@ repos:
     url: https://github.com/linux4sam/meta-atmel
     refspec: dunfell
 
+  meta-raspberrypi:
+    url: https://github.com/agherzan/meta-raspberrypi
+    refspec: dunfell
+
   meta-splash:
     url: https://github.com/texierp/meta-splash
     refspec: dunfell

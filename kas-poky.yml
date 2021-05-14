@@ -35,6 +35,7 @@ local_conf_header:
     SDKMACHINE = "x86_64"
     USER_CLASSES = "buildstats image-mklibs image-prelink"
     PATCHRESOLVE = "noop"
+    DISTRO_FEATURES_remove = "nfs"
   debug-tweaks: |
     EXTRA_IMAGE_FEATURES = "debug-tweaks ssh-server-dropbear"
   diskmon: |
